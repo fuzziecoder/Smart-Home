@@ -1,0 +1,264 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+ /* cursor animation */
+
+  .cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+  }
+  .cursor-outline{
+    width: 50px;
+    height: 50px;
+    border: 2px solid hsla(0, 100%, 0%, 0.5);
+  }
+  .cursor-dot,
+  .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+
+  /* profile boxes */
+
+.team{
+    width: 100%;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E %3Cpath fill='%23f7f8f8' d='M0 0h900v600H0z'/%3E %3Cpath fill='%23BDC9C7' d='M147-53c38 24 61 77 54 124s-44 87-82 114c-38 28-78 43-124 49-45 6-96 1-115-26-19-28-6-79-3-127s-5-94 14-117S-44-60 5-64c50-4 104-12 142 11Zm444 156c24 25 54 44 64 72 9 29-2 67-27 89-24 23-62 30-96 26s-64-19-77-41c-12-23-8-53-1-77 6-23 14-40 27-66 13-25 30-59 48-60 18 0 37 31 62 57ZM340 521c25 19 53 41 53 63s-28 44-53 54-47 8-74 13-58 17-77 7c-18-11-22-42-19-70 4-29 15-54 33-72 18-19 43-31 67-30 23 2 45 17 70 35Z'/%3E %3C/svg%3E");
+    min-height: 100vh; 
+    padding-top: 0px;
+    background-size: cover;
+    background-position: center;
+    cursor: none;
+}
+
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.team h1 span{
+    color: #858e8b;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #dedcd5;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 360px;
+}
+
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+
+.team .team_box .profile .info .name{
+    color: #050505;
+    margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+    margin: 2px 10px 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac031;
+} 
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 10px;
+    background:  rgba(55, 63, 63, 0.5);
+    cursor: none;
+   border-top-left-radius: 125px;
+   border-top-right-radius: 125px;
+   
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 10%; 
+   
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    font-size: 1.25em;
+}
+footer .footer_main .footer_tag a{
+    color: #000;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+} 
+
+footer .footer_main .social-icons i:hover{
+    color: #fac031;
+    transform: translate(0, -10px);
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #000000;
+    margin-left: 10px;
+}  
+
+   /* signup email  */
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+} 
+
+ /* links */
+
+ul li{
+    list-style: none;
+    color: #fff;
+}
+ul li a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    padding-right: 40px;
+    font-size: 1.5em;
+    color: #000;
+    
+}
+
+

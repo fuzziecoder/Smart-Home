@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home App Ui</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+
+<body>
+
+   <!-- Cursor -->
+
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Side navbar  -->
+
+  <aside class="sidebar">
+    <div class="logo">
+      <h2>Smart Home</h2>
+    </div>
+    <ul class="links">
+      <h4>Main Menu</h4>
+      <li>
+        <span class="material-symbols-outlined">dashboard</span>
+        <a href="#">Dashboard</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">diversity_3</span>
+        <a target="_blank" href="aboutus.html">About Us</a>
+      </li>
+     
+      <hr>
+      <h4>Advanced</h4>
+      <li>
+        <span class="material-symbols-outlined">person</span>
+        <a href="#">Admin</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">group</span>
+        <a href="#">Family Members</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">ambient_screen</span>
+        <a href="#">Customisation</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">pacemaker</span>
+        <a href="#">Plugins</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">monitoring</span>
+        <a href="#"> Data Analytic</a>
+      </li>
+      <hr>
+      <h4>Account</h4>
+      <li>
+        <span class="material-symbols-outlined">bar_chart</span>
+        <a href="#">Overview</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">mail</span>
+        <a href="#">Message</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">settings</span>
+        <a href="#">Settings</a>
+      </li>
+      
+      <li class="logout-link">
+        <span class="material-symbols-outlined">logout</span>
+        <a href="#">Logout</a>
+      </li>
+    </ul>
+  </aside>
+
+      <!-- Main Container box -->
+
+  <div class="container">
+      <!-- Screen 1 -->
+
+    <div class="screen-1">
+      <div class="ui--statusbar">
+        <span class="current-time">7:31</span>
+        <p class="Bstatus">
+          <i class="ri-plug-line"></i>
+      </p>
+        <span class="Bpercentage">81%</span>
+      </div>
+      <div class="ui--screen-header">
+        <span class="ui--screen-title">Home</span>
+        <div class="ui--dropdown-menu">
+          <button class="dropdown-toggle arrow">I'm home</button>
+          <ul class="dropdown-item">
+            <li>Cafe vibes</li>
+            <li>I'm leaving</li>
+            <li>Good morning</li>
+            <li>Good night</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--section-title">
+          <span>Sensors</span>
+          <div class="ui--dropdown-menu">
+            <button class="dropdown-toggle">&hellip;</button>
+            <ul class="dropdown-item right">
+              <li>Refresh</li>
+              <li>Manage sensors</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui--horizontal-scroll">
+          <div class="ui--card ui--card-square">
+            <span class="ui-card--title">Temperature</span>
+            <span class="ui-card--value1">18</span>
+          </div>
+          <div class="ui--card ui--card-square">
+            <span class="ui-card--title">Humidity</span>
+            <span class="ui-card--value2">46</span>
+          </div>
+          <div class="ui--card ui--card-square">
+            <span class="ui-card--title">Energy</span>
+            <span class="ui-card--value">17<span class="suffix">kWh</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--section-title">
+          <span>Devices</span>
+          <div class="ui--dropdown-menu">
+            <button class="dropdown-toggle">&hellip;</button>
+            <ul class="dropdown-item right">
+              <li>Refresh</li>
+              <li>Manage devices</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui--stack">
+          <div class="ui--card">
+            <div class="ui-card--icon icon-lightbulb"></div>
+            <div>
+              <span class="ui-card--title">Living room lights</span>
+              <span class="ui-card--subtitle">3 on, 1 off</span>
+            </div>
+            <div class="ui--toggle">
+              <input type="checkbox" id="living-room-lights" />
+              <label for="living-room-lights">Toggle</label>
+            </div>
+          </div>
+          <div class="ui--card">
+            <div class="ui-card--icon icon-speaker"></div>
+            <div>
+              <span class="ui-card--title">Kitchen speaker</span>
+              <span class="ui-card--subtitle">Now playing: Sweet Caroline</span>
+            </div>
+            <div class="ui--toggle">
+              <input type="checkbox" id="kitchen-speaker" />
+              <label for="kitchen-speaker">Toggle</label>
+            </div>
+          </div>
+          <div class="ui--card">
+            <div class="ui-card--icon icon-lock"></div>
+            <div>
+              <span class="ui-card--title">Front door</span>
+              <span class="ui-card--subtitle">Battery at 96%</span>
+            </div>
+            <div class="ui--toggle">
+              <input type="checkbox" id="front-door" />
+              <label for="front-door">Toggle</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Screen 2 -->
+
+    <div class="screen-2">
+      <div class="ui--statusbar">
+        <span class="current-time">7:31</span>
+        <span class="Bpercentage">81%</span>
+      </div>
+      <div class="ui--screen-header">
+        <span class="ui--screen-title">Temperature</span>
+        <div class="ui--dropdown-menu">
+          <button class="dropdown-toggle arrow">Living room</button>
+          <ul class="dropdown-item">
+            <li>Kitchen</li>
+            <li>Dining room</li>
+            <li>Master bedroom</li>
+            <li>Office</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--dial-wrapper">
+          <div class="ui-dial--outer">
+            <div id="range--selector"></div>
+            <div id="range"></div>
+          </div>
+          <div class="ui--dial-inner">
+            <span class="ui--dial-status">&nbsp;&nbsp;&nbsp;Heating to</span>
+            <span class="ui--dial-value3">19<span class="suffix">°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--stack-horizontal" style="margin-top: 36px">
+          <div class="ui--detail">
+            <span class="ui--detail-title">Outdoors</span>
+            <span class="ui--detail-value1">18<span class="suffix">°C</span></span>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="ui--detail">
+            <span class="ui--detail-title">Indoors</span>
+            <span class="ui--detail-value2">19<span class="suffix">°C</span></spa>
+          </div>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--stack-horizontal" style="margin-top: 36px">
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="eco-mode" checked>
+              <label for="eco-mode" class="icon-eco">Eco mode</label>
+            </div>
+          </div>
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="air-flow">
+              <label for="air-flow" class="icon-air">Air flow</label>
+            </div>
+          </div>
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="fan-speed">
+              <label for="fan-speed" class="icon-fan">Fan speed</label>
+            </div>
+          </div>
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="humidity">
+              <label for="humidity" class="icon-water">Humidity</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 3 -->
+
+    <div class="screen-3">
+      <div class="ui--statusbar">
+        <span class="current-time">7:31</span>
+        <span class="Bpercentage">81%</span>
+      </div>
+      <div class="ui--screen-header">
+        <span class="ui--screen-title">Solar heating</span>
+        <div class="ui--dropdown-menu">
+          <button class="dropdown-toggle arrow">Today</button>
+          <ul class="dropdown-item">
+            <li>Yesterday</li>
+            <li>This week</li>
+            <li>Last week</li>
+            <li>This month</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--screen-section">
+          <div class="ui--stack-horizontal">
+            <div class="ui--detail">
+              <span class="ui--detail-title">Current load</span>
+              <span class="ui--detail-value">2<span class="suffix">kW</span></span>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="ui--detail">
+              <span class="ui--detail-title">Consumption</span>
+              <span class="ui--detail-value">27.4<span class="suffix">kWh</span></spa>
+            </div>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--graph"></div>
+          <div class="ui-graph--marker"></div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--horizontal-scroll">
+            <div class="ui--card ui--card-square">
+              <div class="ui--detail">
+                <span class="ui--detail-title">Capacity</span>
+                <span class="ui--detail-value">12<span class="suffix">kW</span></spa>
+              </div>
+              <div class="ui--chart-pie" style="--p:85">
+                <span>85%</span>
+              </div>
+            </div>
+            <div class="ui--card ui--card-square">
+              <div class="ui--detail">
+                <span class="ui--detail-title">Charge rate</span>
+                <span class="ui--detail-value">2<span class="suffix">kW/h</span></spa>
+              </div>
+              <div class="ui--chart-pie" style="--p:65">
+                <span>4h<br />to full</span>
+              </div>
+            </div>
+            <div class="ui--card ui--card-square">
+              <div class="ui--detail">
+                <span class="ui--detail-title">Efficiency</span>
+                <span class="ui--detail-value">95<span class="suffix">%</span></spa>
+              </div>
+              <div class="ui--chart-pie" style="--p:95">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Chatbot -->
+    
+   <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+    
+  </div>
+ 
+
+</body>
+<script src="script.js"></script>
+
+</html>
