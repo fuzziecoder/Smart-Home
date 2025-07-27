@@ -924,6 +924,85 @@ body.show-chatbot .chatbot-toggler {
     }
   }
 
+  /* Toast Notification Styles */
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #222;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 10000;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+  }
+
+  .toast.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .toast.success {
+    background: #4caf50;
+  }
+
+  .toast.error {
+    background: #f44336;
+  }
+
+  .toast.info {
+    background: #2196f3;
+  }
+
+  /* Voice Command Button */
+  .voice-command-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #724ae8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(114, 74, 232, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .voice-command-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(114, 74, 232, 0.4);
+  }
+
+  .voice-command-btn:active {
+    transform: scale(0.95);
+  }
+
+  .voice-command-btn span {
+    font-size: 24px;
+  }
+
+  .voice-command-btn.listening {
+    background: #f44336;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
 
 
 
