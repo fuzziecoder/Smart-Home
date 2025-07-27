@@ -295,7 +295,7 @@ function initRoomTemperature() {
 initRoomTemperature();
 
 // Newsletter Signup → Google Sheets Integration
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzJBCW6M3kngtjUajDNw7Y4XpGgfTS7_vGfMnc1Bg4jSemSCh0iUE9SoLrfI9GLm1uz/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxywA0kXem5fxJPY-bkul8iWJ-dVAOb3MDg3y_5lPnZruiLIxXp6W28-KpWuZVVpGec/exec';
 const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById("msg");
 
