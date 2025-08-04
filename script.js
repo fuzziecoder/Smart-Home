@@ -32,7 +32,6 @@ const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 let userMessage = null;
-const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 // Chatbot greeting
@@ -58,7 +57,8 @@ const createChatLi = (message, className) => {
 };
 
 const generateResponse = (chatElement) => {
-    const API_URL = "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";
+    const API_KEY = "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";
+    const API_URL = "https://api.openai.com/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
     const userMessageLower = userMessage.toLowerCase();
     if (handleDeviceCommands(userMessageLower)) {
