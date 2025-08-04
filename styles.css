@@ -1007,3 +1007,165 @@ body.show-chatbot .chatbot-toggler {
 
 
 
+
+@media (max-width: 600px) {
+  /* Sidebar becomes top bar or collapses */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    z-index: 1000;
+    transition: height 0.3s, width 0.3s;
+    padding: 0 10px;
+  }
+  .sidebar:hover {
+    width: 100vw;
+    height: 120px;
+  }
+  .sidebar .logo {
+    padding: 10px 10px 10px 0;
+  }
+  .logo h2 {
+    display: block;
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+  .sidebar .links {
+    flex-direction: row;
+    margin-top: 0;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .links li, .links li a {
+    display: flex !important;
+    align-items: center;
+    padding: 8px 6px;
+    font-size: 14px;
+  }
+  .links h4, .sidebar:hover .links h4 {
+    display: none;
+  }
+  .links hr {
+    display: none;
+  }
+
+  /* Main container stacks vertically */
+  .container {
+    padding: 70px 8px 8px 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "screen-1"
+      "screen-2"
+      "screen-3";
+    min-height: unset;
+    height: auto;
+    box-shadow: none;
+    background-size: cover;
+  }
+  .screen-1, .screen-2, .screen-3 {
+    height: auto;
+    min-height: 220px;
+    margin-bottom: 18px;
+    padding: 12px 8px;
+    border-radius: 18px;
+  }
+  .screen-1, .screen-2, .screen-3 {
+    align-self: stretch;
+  }
+  .ui--screen-title {
+    font-size: 1.3rem;
+  }
+  .ui--card, .ui--card.ui--card-square, .ui--card.ui--card-square-sm {
+    flex-direction: column;
+    min-width: 100%;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+  }
+  .ui--card .ui-card--value, .ui--card .ui-card--value1, .ui--card .ui-card--value2 {
+    font-size: 1.5rem;
+  }
+  .ui--stack-horizontal {
+    flex-direction: column;
+    row-gap: 8px;
+    column-gap: 0;
+  }
+  .ui--stack {
+    row-gap: 8px;
+  }
+  .ui--dial-wrapper {
+    height: 160px;
+    margin-top: 12px;
+  }
+  .ui--dial-inner {
+    width: 120px;
+    height: 120px;
+    top: 10px;
+  }
+  .ui--dial-value {
+    font-size: 2rem;
+  }
+  .ui--graph {
+    height: 100px;
+    margin: 8px -8px -8px -8px;
+    width: calc(100% + 16px);
+  }
+  .ui-graph--marker {
+    width: 12px;
+    height: 12px;
+    top: 60%;
+    left: 70%;
+  }
+  .ui--chart-pie {
+    width: 40px;
+    font-size: 11px;
+    margin: 8px 2px 2px;
+  }
+  /* Chatbot and voice button already have mobile styles, but ensure z-index */
+  .chatbot, .voice-command-btn {
+    z-index: 2000;
+  }
+  /* Toast notification */
+  .toast {
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    max-width: 95vw;
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+  /* Hide custom cursor on mobile */
+  .cursor-dot, .cursor-outline {
+    display: none !important;
+  }
+  /* Make toggles and buttons bigger for touch */
+  .ui--toggle label, .ui--button label {
+    width: 45px;
+    height: 28px;
+  }
+  .ui--toggle label:after {
+    width: 20px;
+    height: 20px;
+  }
+  .ui--toggle input:checked+label:after {
+    left: calc(100% - 4px);
+  }
+}
+
+
+
+
+
