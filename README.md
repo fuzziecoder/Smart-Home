@@ -4,7 +4,7 @@ A modern, responsive smart home dashboard with real-time device control, voice c
 
 ## ✨ Features
 
-- **Device Control**: Toggle lights, speakers, AC, fans, and locks
+- **Device Control**: Toggle lights, speakers, AC, fans, and locks 
 - **Voice Commands**: Control devices with voice using Web Speech API
 - **Real-time Weather**: Live weather data integration
 - **Energy Analytics**: Dynamic energy consumption charts using Chart.js
